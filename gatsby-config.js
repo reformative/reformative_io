@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    name: 'Awesome Gatsby Starter',
-    basepath: 'https://awesome-gatsby-starter.netlify.com',
-    description: 'A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment',
-    keywords: ['gatsby', 'gatsbyjs', 'gatsby starter', 'github'],
+    name: 'Reformative',
+    basepath: 'https://reformative.io',
+    description: 'A modern and effective approach to KYC refresh and remediation projects.',
+    keywords: ['kyc', 'aml', 'section 166', 'reformative'],
     type: 'website',
-    image: 'https://awesome-gatsby-starter.netlify.com/ok.png',
+    image: 'https://reformative.io/icon.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -38,13 +38,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'reformative-io',
+        short_name: 'reformative',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#001746',
+        theme_color: '#001746',
         display: 'minimal-ui',
-        icon: 'src/assets/ok.png', // This path is relative to the root of the site
+        icon: 'src/assets/icon.png', // This path is relative to the root of the site
       },
     },
 
@@ -53,7 +53,7 @@ module.exports = {
 
     // This plugin enables Progressive Web App + Offline functionality
     // https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
 
     // https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
     // {
@@ -78,6 +78,15 @@ module.exports = {
 
     // (optional) Enable the following for generation of an XML sitemap
     // https://www.gatsbyjs.org/packages/gatsby-plugin-advanced-sitemap/
-    // 'gatsby-plugin-advanced-sitemap',
+    'gatsby-plugin-advanced-sitemap',
+    'gatsby-plugin-theme-ui',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Playfair Display: 500,700i', 'Open Sans'],
+        },
+      },
+    },
   ],
 };

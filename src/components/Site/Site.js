@@ -5,13 +5,15 @@ import { Theme } from '../ui/Theme';
 import { Navigation } from '../Navigation';
 import { Footer } from '../Footer';
 import { SEO } from './SEO';
-import { Main } from './styled';
+import { Container } from '@theme-ui/components';
 
 const Site = ({ children, seo, ...other }) => (
   <Theme>
     <SEO seo={seo} {...other} />
     <Navigation {...other} />
-    <Main>{children}</Main>
+    <Container bg='background' as='main'>
+      {children}
+    </Container>
     <Footer {...other} />
   </Theme>
 );

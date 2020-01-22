@@ -1,22 +1,22 @@
 {
-  "name": "awesome-gatsby-starter",
-  "version": "2.0.0",
-  "description": "A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment",
+  "name": "reformative_io",
+  "version": "1.0.0",
+  "description": "Gatsby static site for Reformative Limited",
   "keywords": [
     "gatsby",
-    "gatsby-starter"
+    "static-site"
   ],
-  "homepage": "https://github.com/South-Paw/awesome-gatsby-starter",
-  "bugs": "https://github.com/South-Paw/awesome-gatsby-starter/issues",
+  "homepage": "https://github.com/reformative/reformative_io",
+  "bugs": "https://github.com/reformative/reformative_io/issues",
   "license": "MIT",
   "author": {
-    "name": "Alex Gabites",
-    "email": "hello@southpaw.co.nz",
-    "url": "http://southpaw.co.nz/"
+    "name": "Tom Sutton",
+    "email": "tom@seed.vc",
+    "url": "http://seed.vc/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/South-Paw/awesome-gatsby-starter"
+    "url": "https://github.com/reformative/reformative_io"
   },
   "scripts": {
     "build": "gatsby build",
@@ -28,16 +28,22 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.27",
     "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
+    "@mdx-js/react": "^1.5.5",
+    "@theme-ui/components": "^0.2.50",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
+    "gatsby-plugin-advanced-sitemap": "^1.4.5",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-mdx": "^1.0.56",
     "gatsby-plugin-offline": "^3.0.19",
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sharp": "^2.2.37",
     "gatsby-plugin-styled-components": "^3.1.12",
+    "gatsby-plugin-theme-ui": "^0.2.53",
+    "gatsby-plugin-typography": "^2.3.21",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-sharp": "^2.3.3",
     "polished": "^3.4.2",
@@ -47,7 +53,8 @@
     "react-helmet": "^5.2.1",
     "react-uid": "^2.2.0",
     "styled-components": "^4.4.1",
-    "styled-normalize": "^8.0.6"
+    "styled-normalize": "^8.0.6",
+    "theme-ui": "^0.2.52"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",

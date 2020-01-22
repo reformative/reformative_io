@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { StyledButton } from './styled';
+import { Button as ButtonBase } from '@theme-ui/components';
 
 const Button = ({ children, ...other }) => {
-  return <StyledButton {...other}>{children}</StyledButton>;
+  return (
+    <ButtonBase py={4} py={3} {...other}>
+      {children}
+    </ButtonBase>
+  );
 };
 
 Button.propTypes = {

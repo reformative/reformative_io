@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from '../../components/ui/Container';
+// import { Container } from '../../components/ui/Container';
 import { Site } from '../../components/Site';
 
 const Page = ({ children, ...other }) => {
   return (
-    <Site {...other}>
-      <Container>{children}</Container>
-    </Site>
+    <Site {...other}>{children}</Site>
   );
 };
 

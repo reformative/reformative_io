@@ -1,39 +1,55 @@
 import React from 'react';
-
-import { Container } from '../ui/Container';
-import { StyledFooter, Inner, Left, Right } from './styled';
+import { Container, Grid, Box, Heading, Text, NavLink } from '@theme-ui/components';
+import { Link } from 'gatsby';
 
 const Footer = () => (
-  <StyledFooter>
-    <Container maxWidth={1200}>
-      <Inner>
-        <Left>
-          <div>
-            Contribute on <a href="https://github.com/South-Paw/awesome-gatsby-starter">Github</a>.
-          </div>
-          <div>
-            Created with{' '}
-            <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
-              Gatsby
-            </a>
-            .
-          </div>
-        </Left>
-        <Right>
-          <div>
-            Copyright ©{' '}
-            <a href="https://southpaw.co.nz" target="_blank" rel="noopener noreferrer">
-              Alex Gabites
-            </a>
-            , 2019.
-          </div>
-          <div>
-            <a href="https://github.com/South-Paw/awesome-gatsby-starter/blob/master/LICENSE">MIT</a> Licensed.
-          </div>
-        </Right>
-      </Inner>
-    </Container>
-  </StyledFooter>
+  <Container as="footer" color="white" bg="secondary" p={[4, null, 5]}>
+    <Grid gap={[4, null, 2]} columns={[1, 2, 3, 4]}>
+      <Box>
+        <Heading pb={3}>Legal</Heading>
+        <Text variant={'text.heading'}>
+          <NavLink as={Link} to="/legal/privacy-policy">
+            Privacy Policy
+          </NavLink>
+        </Text>
+        <Text variant={'text.heading'}>
+          <NavLink as={Link} to="/legal/terms-of-use">
+            Terms of Use
+          </NavLink>
+        </Text>
+      </Box>
+      <Box>
+        <Heading pb={3}>About Us</Heading>
+        <Text variant={'text.heading'}>
+          <NavLink as={Link} to="/legal/privacy-policy">
+            Team
+          </NavLink>
+        </Text>
+        <Text variant={'text.heading'}>
+          <NavLink as={Link} to="/legal/terms-of-use">
+            Experience
+          </NavLink>
+        </Text>
+      </Box>
+      <Box>
+        <Heading pb={3}>Contact</Heading>
+        <Text variant={'text.heading'}>
+          Reformative Limited.
+          <br />
+          CityPoint, 17th Floor.
+          <br />
+          1 Ropemaker Street.
+          <br />
+          London
+          <br />
+          EC2Y 9HT
+        </Text>
+      </Box>
+    </Grid>
+    <Text variant={'text.heading'} mt={4}>
+      © {new Date().getFullYear()} | Reformative Limited
+    </Text>
+  </Container>
 );
 
 export { Footer };
