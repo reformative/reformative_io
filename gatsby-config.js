@@ -78,7 +78,7 @@ module.exports = {
 
     // (optional) Enable the following for generation of an XML sitemap
     // https://www.gatsbyjs.org/packages/gatsby-plugin-advanced-sitemap/
-    'gatsby-plugin-advanced-sitemap',
+    // 'gatsby-plugin-advanced-sitemap',
     'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-plugin-web-font-loader',
