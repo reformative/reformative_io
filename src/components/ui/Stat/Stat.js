@@ -6,13 +6,22 @@ import { Box, Heading, Text } from '@theme-ui/components';
 
 const Stat = ({ headline, content }) => (
   <Box>
-    <Heading as="h1" variant={'text.heading'} sx={{
-      fontSize: [6, null, 7],
-      fontStyle: 'italic',
-    }}>
+    <Heading
+      as="h1"
+      variant={'text.heading'}
+      sx={{
+        fontSize: [6, null, 7],
+        fontStyle: 'italic',
+      }}
+    >
       {headline}
     </Heading>
-    <Text variant={'text.body'}>{content}</Text>
+    <Heading
+      as="h5"
+      variant={'text.heading'}
+      >
+      {content}
+    </Heading>
   </Box>
 );
 
