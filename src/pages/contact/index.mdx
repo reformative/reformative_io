@@ -1,12 +1,40 @@
 ---
-title: Contact
+title: About
 ---
-import { Container } from '@theme-ui/components'
+import { Stat } from '../../components/ui/Stat';
+import { Container, Grid, Box, Heading, Text } from '@theme-ui/components'
+import { Button } from '../../components/ui/Button';
 
-<Container p={[4,null, 5]}>
-
-# Contact
-
-Content...
-
+<Container p={[4, null, 5]}>
+        <Heading mb={3}>Contact Us</Heading>
+  <Grid gap={[4, null, 2]} columns={[1, 2]}>
+    <Grid gap={[4, null, 2]} columns={[1, 2]}>
+      <Box>
+        <Text variant={'text.body'}>
+          Reformative Limited.
+          CityPoint, 17th Floor.
+          1 Ropemaker Street.
+          London
+          EC2Y 9HT
+        </Text>
+      </Box>
+      <Box>
+        <Text variant={'text.body'}>
+          Email
+          Phone
+          Social links
+        </Text>
+      </Box>
+    </Grid>
+    <Box>
+      <Text variant={'text.body'}>
+        Contact form
+      </Text>
+    </Box>
+  </Grid>
+</Container>
+<Container p={[4, null, 5]} bg="white">
+  <Text variant={'text.body'}>
+    Full width GOOGLE MAP Here
+  </Text>
 </Container>

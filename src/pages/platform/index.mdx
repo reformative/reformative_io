@@ -1,48 +1,85 @@
 ---
 title: Platform
 ---
-import { Container } from '@theme-ui/components'
+import { Stat } from '../../components/ui/Stat';
+import { Container, Grid, Box, Heading, Text } from '@theme-ui/components'
+import { Button } from '../../components/ui/Button';
 
-<Container p={[4,null, 5]}>
-
-# Reformative Platform
-
-To avoid financial and reputational damage, firms need to demonstrate a robust compliance framework and ensure that Anti Money Laundering (AML) regulatory requirements are being adhered to at both a national and international level.
-
-The Reformative platform is a complete remediation and new client on-boarding platform, allowing organisations the ability to streamline and catagorise customer data and risk in a single digital solution.
-
-It offers an innovative answer, to enable the collaborative administration of one off and ongoing customer due diligence (CDD) and where required enhanced due diligence (EDD) before taking on a new client or reviewing their current customer base.
-
-The solution enables Users to dive deeper into understanding the risks and opportunities which can often go unnoticed. Enabling organisations to gain immediate visibility on their customers.
-
-In addition to the efficiency gains, the solution will reduce risk associated with customers and allows firms to focus on managing results for their business.
-
-The platform provides evidence-based analysis of a subject (individual or company) in order to identify any undue regulatory, compliance or professional risks posed by association to the client.
-
-Easily authenticate the information held against individuals, trusts, businesses and corporations.
-
-The platform provides a wide-ranging set of external data feeds, covering all AML, KYC and due diligence checks and notify the User of any flags.
-
-The platform automates the onboarding and escalation process of low, medium and high-risk customers.
-
-
-
-
-### Uses
-  - Wide-ranging set of external data feeds, covering AML, KYC and due diligence 
-  - Notifies the User of any red flags
-  - Automate onboarding and escalation process of low, medium and high-risk customers
-  - Provides evidence-based analysis of an individual or company and identifies any undue regulatory, compliance or professional risks posed by association to the client
-  - Easily authenticates the information held against individuals, trusts, businesses and corporations
-  - Preset workflow via a series of pre-populated fields of data, taking the handlers on a natural journey through the platform
-  - Accelerate &amp; simplify customer insight and on-going monitoring
-  - Maximise automation based on your risk appetite
-
-
-### Benefits
-  - Single point of truth
-  - Compliance
-  - Reduce cost due to efficiency
-  - Mitigate risk
-
+<Container p={[4, null, 5]}>
+  <Grid gap={[4, null, 2]} columns={[1, null, 2]}>
+    <Box>
+      <Heading mb={3}>The Reformative platform is a complete remediation and new client on-boarding platform, allowing organisations the ability to streamline and catagorise customer data and risk in a single digital solution.</Heading>
+      <Text variant={'text.body'}>
+        It offers an innovative answer, to enable the collaborative administration of one off and ongoing customer due diligence (CDD) and where required enhanced due diligence (EDD) before taking on a new client or reviewing their current customer base.
+      </Text>
+      <Text variant={'text.body'}>
+      The solution enables Users to dive deeper into understanding the risks and opportunities which can often go unnoticed. Enabling organisations to gain immediate visibility on their customers.
+      </Text>
+    </Box>
+    <Box>
+    </Box>
+  </Grid>
+</Container>
+<Container p={[4, null, 5]}>
+  <Grid gap={[4, null, 2]} columns={[1, null, 2]}>
+    <Box></Box>
+    <Box>
+      <Heading mb={3}>
+      In addition to the efficiency gains, the solution will reduce risk associated with customers and allows firms to focus on managing results for their business.
+        </Heading>
+      <Text variant={'text.body'}>
+      The platform provides evidence-based analysis of a subject (individual or company) in order to identify any undue regulatory, compliance or professional risks posed by association to the client.
+      </Text>
+    </Box>
+  </Grid>
+</Container>
+<Container p={[4, null, 5]} bg='white'>
+  <Grid gap={[4, null, 2]} columns={[2, 4]}>
+    <Box mb={3}>
+      <Stat headline={'logo'} content={'Persuasive copy'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'logo'} content={'Persuasive copy'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'logo'} content={'Persuasive copy'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'logo'} content={'Persuasive copy'} />
+    </Box>
+  </Grid>
+</Container>
+<Container p={[4, null, 5]}>
+  <Grid gap={[4, null, 2]} columns={[1, null, 2]}>
+    <Box>
+      <Heading mb={3}>Uses</Heading>
+      <ul variant={'text.body'}>
+        <li>Wide-ranging set of external data feeds, covering AML, KYC and due diligence </li>
+        <li>Notifies the User of any red flags</li>
+        <li>Automate onboarding and escalation process of low, medium and high-risk customers</li>
+        <li>Provides evidence-based analysis of an individual or company and identifies any undue regulatory, compliance or professional risks posed by association to the client</li>
+        <li>Easily authenticates the information held against individuals, trusts, businesses and corporations</li>
+        <li>Preset workflow via a series of pre-populated fields of data, taking the handlers on a natural journey through the platform</li>
+        <li>Accelerate &amp; simplify customer insight and on-going monitoring</li>
+        <li>Maximise automation based on your risk appetite</li>
+      </ul>
+    </Box>
+    <Box>
+    </Box>
+  </Grid>
+</Container>
+<Container p={[4, null, 5]}>
+  <Grid gap={[4, null, 2]} columns={[1, null, 2]}>
+    <Box>
+    </Box>
+    <Box>
+      <Heading mb={3}>Benefits</Heading>
+      <ul variant={'text.body'}>
+        <li>Single point of truth</li>
+        <li>Compliance</li>
+        <li>Reduce cost due to efficiency</li>
+        <li>Mitigate risk</li>
+      </ul>
+    </Box>
+  </Grid>
 </Container>

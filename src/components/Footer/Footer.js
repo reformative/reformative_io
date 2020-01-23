@@ -21,12 +21,12 @@ const Footer = () => (
       <Box>
         <Heading pb={3}>About Us</Heading>
         <Text variant={'text.heading'}>
-          <NavLink as={Link} to="/legal/privacy-policy">
+          <NavLink as={Link} to="/about/team">
             Team
           </NavLink>
         </Text>
         <Text variant={'text.heading'}>
-          <NavLink as={Link} to="/legal/terms-of-use">
+          <NavLink as={Link} to="/about/experience">
             Experience
           </NavLink>
         </Text>

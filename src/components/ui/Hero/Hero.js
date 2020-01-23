@@ -1,10 +1,9 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from 'theme-ui';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Grid, Box, Heading, Button, Card, Embed } from '@theme-ui/components';
 import heroBg from '../../../assets/background.jpg';
-
 
 const Hero = ({ media, headline, content, callToAction }) => (
   <Container
@@ -20,7 +19,13 @@ const Hero = ({ media, headline, content, callToAction }) => (
   >
     <Grid gap={[4, null, 2]} columns={[1, null, 2]}>
       <Box>
-        <Heading as="h1" mb={2}>
+        <Heading
+          as="h1"
+          mb={4}
+          sx={{
+            fontSize: 6,
+          }}
+        >
           {headline}
         </Heading>
         <Heading as="h2" mb={2}>
@@ -47,7 +52,6 @@ Hero.defaultProps = {
   headline: null,
   content: null,
   callToAction: null,
-
 };
 
 export { Hero };

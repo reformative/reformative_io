@@ -1,12 +1,51 @@
 ---
-title: Markets
+title: Market
 ---
-import { Container } from '@theme-ui/components'
+import { Stat } from '../../components/ui/Stat';
+import { Container, Grid, Box, Heading, Text } from '@theme-ui/components'
+import { Button } from '../../components/ui/Button';
 
-<Container p={[4,null, 5]}>
-
-## Markets
-
-Content...
-
+<Container p={[4, null, 5]}>
+  <Grid gap={[4, null, 2]} columns={[1, null, 2]}>
+    <Box>
+      <Heading mb={3}>Solving challenges across industries.</Heading>
+      <Text variant={'text.body'}>
+        What we do....
+      </Text>
+    </Box>
+    <Box>
+      <Heading mb={3}>FORM</Heading>
+      <Text variant={'text.body'}>
+        Lead gen and call to action
+      </Text>
+    </Box>
+  </Grid>
+</Container>
+<Container p={[4, null, 5]}>
+  <Grid gap={[4, null, 2]} columns={[2, 4]}>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+    <Box mb={3}>
+      <Stat headline={'icon'} content={'Industry sector'} />
+    </Box>
+  </Grid>
 </Container>
