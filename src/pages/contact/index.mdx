@@ -1,8 +1,9 @@
 ---
-title: About
+title: Contact
 ---
 import { Stat } from '../../components/ui/Stat';
 import { Container, Grid, Box, Heading, Text } from '@theme-ui/components'
+import { Map } from '../../components/Map';
 import { Button } from '../../components/ui/Button';
 
 <Container p={[4, null, 5]}>
@@ -33,8 +34,9 @@ import { Button } from '../../components/ui/Button';
     </Box>
   </Grid>
 </Container>
-<Container p={[4, null, 5]} bg="white">
-  <Text variant={'text.body'}>
-    Full width GOOGLE MAP Here
-  </Text>
-</Container>
+<Map 
+  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAks7YAPrijNj5vgaX3Zufn7ulYpuPsl4&v=3.exp&libraries=geometry,drawing,places"
+  loadingElement={<div style={{ height: `100%` }} />}
+  containerElement={<Container sx={{height: "440px"}} bg="white" />}
+  mapElement={<Box sx={{height: "100%"}} />}
+  isMarkerShown />
