@@ -3,7 +3,7 @@ import { jsx } from 'theme-ui';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Grid, Box, Heading, Button, Card, Embed } from '@theme-ui/components';
-import heroBg from '../../../assets/background.jpg';
+import heroBg from '../../../assets/background-min.jpg';
 
 const Hero = ({ media, headline, content, callToAction }) => (
   <Container
