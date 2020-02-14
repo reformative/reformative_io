@@ -91,6 +91,9 @@ export default {
     h1: {
       color: 'text',
       fontFamily: 'heading',
+      fontStyle: 'italic',
+      opacity: 0.8,
+      mixBlendMode: 'hard-light',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 5,
@@ -98,6 +101,9 @@ export default {
     h2: {
       color: 'text',
       fontFamily: 'heading',
+      fontStyle: 'italic',
+      opacity: 0.8,
+      mixBlendMode: 'hard-light',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 4,
@@ -105,6 +111,9 @@ export default {
     h3: {
       color: 'text',
       fontFamily: 'heading',
+      fontStyle: 'italic',
+      opacity: 0.8,
+      mixBlendMode: 'hard-light',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 3,
@@ -112,6 +121,9 @@ export default {
     h4: {
       color: 'text',
       fontFamily: 'heading',
+      fontStyle: 'italic',
+      opacity: 0.8,
+      mixBlendMode: 'hard-light',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 2,
@@ -119,6 +131,9 @@ export default {
     h5: {
       color: 'text',
       fontFamily: 'heading',
+      fontStyle: 'italic',
+      opacity: 0.8,
+      mixBlendMode: 'hard-light',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 1,
@@ -126,6 +141,9 @@ export default {
     h6: {
       color: 'text',
       fontFamily: 'heading',
+      fontStyle: 'italic',
+      opacity: 0.8,
+      mixBlendMode: 'hard-light',
       lineHeight: 'heading',
       fontWeight: 'heading',
       fontSize: 0,
