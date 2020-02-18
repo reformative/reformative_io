@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Grid, Box, Heading, Button, Card, Embed } from '@theme-ui/components';
+import { Container, Grid, Box, Heading, Button, Card, Embed, Image } from '@theme-ui/components';
 import heroBg from '../../../assets/background-min.jpg';
 
 const Hero = ({ media, headline, content, callToAction }) => (
@@ -34,7 +34,8 @@ const Hero = ({ media, headline, content, callToAction }) => (
         <Box mt={4}>{callToAction}</Box>
       </Box>
       <Box>
-        <Embed src={media} />
+        <Image p={3} src={media} />
+        {/* <Embed src={media} /> */}
       </Box>
     </Grid>
   </Container>

@@ -195,4 +195,10 @@ export default {
       maxWidth: '100%',
     },
   },
+  images: {
+    avatar: {
+      width: 160,
+      borderRadius: 99999,
+    },
+  },
 };
